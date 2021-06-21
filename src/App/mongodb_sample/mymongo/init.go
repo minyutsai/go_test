@@ -9,7 +9,7 @@ import (
 
 func Init() (*mongo.Client ,error) {
 
-	clientOptions := options.Client().ApplyURI("mongodb://root:abcde12345@127.0.0.1")
+	clientOptions := options.Client().ApplyURI("mongodb://root:abcd@127.0.0.1")
 	
 	// Connect to MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
